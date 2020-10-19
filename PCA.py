@@ -9,7 +9,7 @@ import math
 # Adapted from https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60
 ########################################################################################
 
-url = "https://github.com/Benbenton01/Aphylloin/blob/branch/other_file.md"
+url = "https://github.com/Benbenton01/Aphyllon/blob/main/PCA_raw_data.csv"
 # load dataset into Pandas DataFrame
 
 df = pd.read_csv(url, names=['Angle', 'Cup Depth', 'Lobe Length', 'Cup:Lobe', 'Flower Number', 'Flower Length',
