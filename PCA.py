@@ -9,7 +9,7 @@ import math
 # Adapted from https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60
 ########################################################################################
 
-url = "/Users/benbenton/Desktop/Aphyllon 6-28-2020/Data/PCA_raw_data_9-29-20 Formatted.csv"
+url = "https://github.com/Benbenton01/Aphylloin/blob/branch/other_file.md"
 # load dataset into Pandas DataFrame
 
 df = pd.read_csv(url, names=['Angle', 'Cup Depth', 'Lobe Length', 'Cup:Lobe', 'Flower Number', 'Flower Length',
@@ -65,10 +65,8 @@ for target, color, marker in zip(targets, colors, markers):
 for i, point in finalDf.iterrows():
     if point['name'] == 'RSA0006071':
         ax.text(point['principal component1'], point['principal component2'], point['name'])
-#plt.style.use('classic')
-#print(finalDf)
+
 fig.set_size_inches(4.625, 3)
 ax.legend(targets, loc=0, prop={'size': 9})
 ax.tick_params(axis='both', labelsize=7)
 plt.show()
-#ax.get_figure().savefig('/Users/benbenton/Desktop/Aphyllon 6-28-2020/PCA_coordinates_.svg')
